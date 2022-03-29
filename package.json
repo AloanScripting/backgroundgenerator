@@ -4,7 +4,7 @@
   "description": "",
   "main": "script.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "browserify script.js > bundle.js && live-server"
   },
   "repository": {
     "type": "git",
@@ -16,11 +16,8 @@
     "url": "https://github.com/AloanScripting/backgroundgenerator/issues"
   },
   "homepage": "https://github.com/AloanScripting/backgroundgenerator#readme",
-  "peerDependencies": {
-    "miller-rabin": "^1.1.1"
-  },
   "dependencies": {
-    "lodash": "^4.17.21",
-    "react": "^17.0.2"
+    "browserify": "^17.0.0",
+    "lodash": "^4.17.21"
   }
 }
